@@ -17,6 +17,6 @@
 
    使用命令
    #+BEGIN_SRC bash
-   $git push origin master
-   # origin代表本地分支, master代表远程分支
+   $ git push origin master
+   # origin代表远程库, master代表本地库的当前分支
    #+END_SRC
