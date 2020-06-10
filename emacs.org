@@ -1,0 +1,33 @@
+#+TITLE: Emacs笔记
+#+AUTHOR: Jack Cheung
+#+DATE: <2020-06-10 Wed 16:45>
+#+KEYWORDS: emacs, 笔记
+#+TAGS: emacs, 笔记
+
+* emacs introduction
+  -- <2020-06-10 Wed 16:53>
+
+  在emacs中, 一切key都有相应的function. kbd 联结keys 和 functions. 因此执行
+  functions有两种方式:
+  1. 直接使用key
+  2. M-x function
+  有些kbd比较容易遗忘, 但是功能却比较容易想起来, 因此可以通过M-x 来执行function.
+  比如想创建dir, 可以 *M-x make-directory* . 
+  
+  想修改文件名, 可以 *M-x rename-file* .
+
+
+
+* emacs basics
+  -- <2020-06-10 Wed 16:52>
+
+** file operations
+
+** dir operations
+
+* org-mode
+  -- <2020-06-10 Wed 16:47>
+
+  1. org comment:
+     可以使用快捷键: c-x c-; 或者c-x ;
+     可以直接打标机: #
