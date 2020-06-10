@@ -1,10 +1,11 @@
 # Windows:
 Thumbs.db
-ehthumbs.db
-Desktop.ini
 
 # Mac:
 .DS_Store
 
 # Emacs:
-.#*
+^.#*
+
+# git
+.gitignore
