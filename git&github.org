@@ -20,3 +20,33 @@
    $ git push origin master
    # origin代表远程库, master代表本地库的当前分支
    #+END_SRC
+
+** 常见问题
+   1. .gitignore文件不工作
+      - 现象:配置到.gitignore文件中后, 实际修改了想被忽略的文件, 调用git status
+        查看时, 仍然会提示提交这些文件.
+      - 原因: 原因是git ignore只会对不在git仓库中的文件进行忽略, 如果这些文件已
+        经在git仓库中, 则不会忽略. 所以如果需要忽略的文件已经提交到本地仓库, 则
+        需要从本地仓库中删除掉, 如果已经提交到远端仓库, 则需要从远端仓库中删除.
+        删除.gitignore文件才能实际生效.
+      - 解法:
+        - 从远端仓库clone一份代码
+        - 使用git rm --cached file/to/be/ignored -r 删除需要被忽略的文件
+        - .gitignore中配置需要被忽略的文件
+        - git add . 然后git commit ；再git push 到远端服务器
+        这样保证远端服务器上没有需要被ignore的文件, 即使在本地修改这些文件, 使用
+        git status查看也不会再有提示了.
+      - .gitignore语法规范
+        - 空行或是以#开头的行即注释行将被忽略
+        - 以斜杠 “/” 结尾表示目录
+        - 以星号 “*” 通配多个字符
+        - 以问号 “?” 通配单个字符
+        - 以方括号 “[]” 包含单个字符的匹配列表
+        - 以叹号 “!” 表示不忽略(跟踪)匹配到的文件或目录
+      - 查看gitignore规则:
+        比如查看emacs未保存文档的.#...文件, 可以用:
+        #+BEGIN_SRC bash
+        $git check-ignore -v .#git\&github.org
+        #+END_SRC
+
+
