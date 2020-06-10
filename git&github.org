@@ -4,13 +4,19 @@
 #+KEYWORDS: git, github, 笔记
 #+TAGS: git, github, 笔记
 
-* git <--> github
+* git <-----> github
   -- <2020-06-10 Wed 16:31>
 
-  git 管理本地仓库, github 托管远程仓库. 有两种方式建立远程仓库:
-  1. 本地建立, 提交到远程.
-
-     
-  2. 远程建立, 克隆岛本地.
+** 创建本地远程关联库
+   git 管理本地仓库, github 托管远程仓库. 有两种方式建立远程仓库:
+   1. 本地建立, 提交到远程.
+   2. 远程建立, 克隆岛本地.
 
   
+** 本地提交到远程
+
+   使用命令
+   #+BEGIN_SRC bash
+   $git push origin master
+   # origin代表本地分支, master代表远程分支
+   #+END_SRC
