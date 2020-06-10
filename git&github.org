@@ -1,0 +1,16 @@
+#+TITLE: Git & Github 笔记
+#+AUTHOR: Jack Cheung
+#+DATE: <2020-06-10 Wed 16:30>
+#+KEYWORDS: git, github, 笔记
+#+TAGS: git, github, 笔记
+
+* git <--> github
+  -- <2020-06-10 Wed 16:31>
+
+  git 管理本地仓库, github 托管远程仓库. 有两种方式建立远程仓库:
+  1. 本地建立, 提交到远程.
+
+     
+  2. 远程建立, 克隆岛本地.
+
+  
