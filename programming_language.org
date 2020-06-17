@@ -1,0 +1,44 @@
+#+TITLE: 编程语言
+#+AUTHOR: Jack Cheung
+#+DATE: <2020-06-17 Wed 13:08>
+#+KEYWORDS: 编程语言
+#+TAGS: 编程语言
+
+* ASP.NET 和 JVM
+
+  一个典型的计算机提供的虚拟计算机分层接口中, 一种编程语言的编译器和解释器通常直
+  接和操作系统邻接. 但是为了实现, "一次编译, 到处运行", 在编程语言和操作系统中间
+  出现了虚拟机. 比较著名的两个是JVM和ASP.NET.
+
+  所以JVM和ASP.NET 可以看做两个虚拟的编程环境, 就像你在Unix或者Linux上变成一样.
+
+  JVM主要编译java语言以及运行java语言编写的软件. ASP.NET是微软提供的一种开发平台,
+  2016年定名为ASP.NET core. .NET框架支持C#, VB, ASP, JScript, F#, J#, Windows
+  Powershell等语言.
+
+  jvm对应clr，java se runtime对应 .net framework， jdk对应 .net framework sdk，
+  java对应C#，JPype对应IronPython，scala对应F#（不准），就是想表达jvm上可以有很
+  多种语言，clr上也可以有很多语言。在java平台上可以开发web，服务，界面程序，安卓，
+  C#也可以开发web，服务，界面exe程序，手机app。spring里面东西好像比较多，.net有
+  移植的http://spring.net，但是更应该对应aspnet mvc + unity啥的。java体系跨平台，
+  C#体系一开始用mono现在由微软主导的 .net core 跨平台。java现在用JetBrains开发了
+  吧，C#一直是VS为主。
+
+* 如何评价一门编程语言
+
+  这个问题的一个比较好的答案在Paul Graham写的"黑客与画家"第14章"梦寐以求的编程语
+  言"里, 有三个要素:
+  1. 表达力
+  2. 精心设计的函数库
+  3. 杀手级应用
+
+  在"七周七语言"这本书中, 也提过类似的说法. 在E.S.R的"How to become a hacker"这
+  篇文章中也提过多学几种编程语言.
+
+  可以说C和Lisp代表了编程语言的两大高峰. 一个从CPU硬件出发, 一个从逻辑出发.
+
+  目前, Python应该是最理想的编程语言. Python的表达力相当强悍, 它不断地移植函数式
+  编程语言的特性; Python的函数库相当丰富好用, 设计各种应用, 满足Graham所说的完全
+  正交最小集; Python有许多Killer级的软件包, 比如numpy, matplotlib, scipy,
+  pandas, scikit-learn, TensorFlow, PyTorch, scrapy等等.
+

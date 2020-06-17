@@ -1,0 +1,5 @@
+#+TITLE: Make 基础
+#+AUTHOR: Jack Cheung
+#+DATE: <2020-06-11 Thu 11:48>
+#+KEYWORDS: make, gnu
+#+TAGS: make, gnu

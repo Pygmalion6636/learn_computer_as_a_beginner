@@ -1,0 +1,9 @@
+#+TITLE: 从头学Python
+#+AUTHOR: Jack Cheung
+#+DATE: <2020-06-11 Thu 09:42>
+#+KEYWORDS: Python, 从头学
+#+TAGS: Python, 从头学
+
+* 编程基础
+
+* Python入门
